@@ -56,11 +56,12 @@ $conn->close();
     <nav>
         <ul class="nav-links">
             <li><a href="index.php">Home</a></li>
-            <li><a href="#">Recepten-Overzicht</a></li>
+            <li><a href="receptenoverzicht.php">Recepten-Overzicht</a></li>
             <li><a href="ReceptToevoegen.php">Recepten Toevoegen</a></li>
-            <li><a href="#">Receptboeken</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="receptboeken.php">Receptboeken</a></li>
             <li><a href="admin.php">Administratie</a></li>
+            <li><a href="ContactShow.php">Contactlijst</a></li>
+
         </ul>
     </nav>
 </header>

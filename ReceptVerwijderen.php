@@ -58,10 +58,10 @@ $conn->close();
     <nav>
         <ul class="nav-links">
           <li><a href="index.php">Home</a></li>
-          <li><a href="#">Recepten-Overzicht</a></li>
+          <li><a href="receptenoverzicht.php">Recepten-Overzicht</a></li>
           <li><a href="ReceptToevoegen.php">Recepten Toevoegen</a></li>
-          <li><a href="#">Receptboeken</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="receptboeken.php">Receptboeken</a></li>
+          <li><a href="contact.php">Contact</a></li>
           <li><a href="admin.php">Administratie</a></li>
 
         </ul>
@@ -139,7 +139,7 @@ main {
 
 .delete-button {
   padding: 10px 20px;
-  background-color: #ff3333;
+  background-color: #d96707;
   color: white;
   border: none;
   border-radius: 4px;

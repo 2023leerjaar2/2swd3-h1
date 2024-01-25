@@ -25,6 +25,7 @@
           <li><a href="contact.php">Contact</a></li>
           <li><a href="admin.php">Administratie</a></li>
           <li><a href="ReceptBoekenToevoegen.php">Recept Boeken Toevoegen</a></li>
+          <li><a href="ContactShow.php">Contactlijst</a></li>
 
         </ul>
     </nav>
@@ -47,7 +48,13 @@
     <label for="prijs">Prijs:</label><br>
     <input type="text" id="prijs" name="prijs" placeholder="Voeg hier de prijs toe!"><br><br>
     
-    <input type="submit" value="Opslaan"> 
+    <label for="prijs">Link:</label><br>
+    <input type="text" id="prijs" name="link" placeholder="Voeg hier de link toe!"><br><br>
+
+   
+  <input type="submit" value="Opslaan">  
+
+</form>
 
 </form>
 
@@ -102,7 +109,7 @@ main {
 .delete-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff3333;
+  background-color: red;
   color: white;
   text-decoration: none;
   border: none;
@@ -123,7 +130,7 @@ form {
       padding: 18px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-background-color: blue;
+background-color: #d96707;
     }
     
     label {
@@ -143,7 +150,7 @@ background-color: blue;
     
     input[type="submit"] {
       padding: 8px 16px;
-      background-color: #4CAF50;
+      background-color: red;
       color: white;
       border: none;
       border-radius: 4px;
@@ -210,8 +217,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['boektitel'])) {
     $boektitel = $_POST['boektitel'] ?? '';
     $auteur = $_POST['auteur'] ?? '';
     $prijs = $_POST['prijs'] ?? '';
+    $link = $_POST['link'] ?? '';
 
-    $sql = "INSERT INTO receptboeken (Titel, Auteurnaam, Prijs) VALUES ('$boektitel', '$auteur', '$prijs')";
+
+    $sql = "INSERT INTO receptboeken (Titel, Auteurnaam, Prijs, Link) VALUES ('$boektitel', '$auteur', '$prijs', '$link')";
 
     if ($conn->query($sql) === TRUE) {
         echo "<script>alert('Receptboek succesvol toegevoegd!');</script>";

@@ -19,7 +19,7 @@
           <li><a href="receptenoverzicht.php">Recepten-Overzicht</a></li>
           <li><a href="ReceptToevoegen.php">Recepten Toevoegen</a></li>
           <li><a href="receptboeken.php">Receptboeken</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
           <li><a href="inloggen.php">Inloggen/Registreren</a></li>
           <li><a href="admin.php">Administratie</a></li>
           <li><a href="ReceptBoekenToevoegen.php">Recept Boeken Toevoegen</a></li>
@@ -209,7 +209,7 @@ form {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: blue;
+  background-color: #d96707;
 }
 
 form input[type="text"],
@@ -224,7 +224,7 @@ form textarea {
 
 form input[type="submit"] {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: red;
   color: white;
   border: none;
   border-radius: 4px;

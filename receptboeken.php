@@ -42,13 +42,13 @@
     die("Connection failed: " . $conn->connect_error);
   }
 
-  $sql = "SELECT gebruikersnaam FROM gebruikers ORDER BY gebruikersnaam ASC";
+  $sql = "SELECT * FROM receptboeken";
 
   $result = $conn->query($sql);
 
   if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        echo "<li>" . $row["gebruikersnaam"] . " <a href=\"verwijder_gebruiker.php?gebruikersnaam=" . $row["gebruikersnaam"] . "\" style=\"text-decoration: none;\">Verwijder</a></li>";
+        echo "<li>" . $row["Titel"] . '<br>' . $row["Auteurnaam"] . '<br>' . $row["prijs"] . '<br>' .  $row["link"] . '</li>';
     }    }
    else {
     echo "Geen gebruikers gevonden";
@@ -76,7 +76,7 @@
 <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
+      background-color: #d96707;
       margin: 0;
       padding: 0;
       background-image: url('./images/Background.jpeg');
@@ -85,7 +85,7 @@
 
 .admin-links {
   width: 200px; 
-  background-color: ; 
+  background-color: #d96707; 
   text-decoration: none; 
   padding-left: 10px; 
 }
@@ -98,7 +98,7 @@
 }
 
 .admin-links a:hover {
-  background-color: #333;
+  background-color: #d96707;
   color: red;
 }
 
@@ -132,7 +132,7 @@
 }
     
     .user-list {
-      background-color: #f9f9f9;
+      background-color: #d96707;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -149,7 +149,7 @@
 
     input[type="submit"] {
       padding: 10px 20px;
-      background-color: #4CAF50;
+      background-color: #d96707;
       color: white;
       border: none;
       border-radius: 4px;
@@ -158,7 +158,7 @@
     }
 
     input[type="submit"]:hover {
-      background-color: #45a049;
+      background-color: #d96707;
     }
 
   </style>
@@ -183,7 +183,7 @@ main {
     .user-list li {
       margin-bottom: 8px;
       font-size: 18px;
-      background-color: red;
+      background-color: ;
       padding: 8px 12px;
       border-radius: 6px;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -192,7 +192,7 @@ main {
 
     .user-list li:hover {
       transform: translateY(-3px);
-      background-color: red;
+      background-color: #d96707;
     }
 body {
   margin: 0;
@@ -258,7 +258,7 @@ main {
 
 .nav-links li a:hover {
   font-size: 20px; 
-  color:red;
+  color: #d96707;
 
 }
 </style>

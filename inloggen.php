@@ -100,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         input[type="submit"] {
             padding: 15px 30px;
             font-size: 20px;
-            background-color: blue;
+            background-color: red;
             color: white;
             border: none;
             border-radius: 8px;

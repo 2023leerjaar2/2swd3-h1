@@ -24,6 +24,8 @@
           <li><a href="ReceptBoekenToevoegen.php">Recept Boeken Toevoegen</a></li>
           <li><a href="contact.php">Contact</a></li>
           <li><a href="admin.php">Administratie</a></li>
+          <li><a href="ContactShow.php">Contactlijst</a></li>
+
         </ul>
     </nav>
     <section class="banner">

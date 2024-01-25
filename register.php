@@ -47,7 +47,7 @@
             $insert_user_sql = "INSERT INTO gebruikers (Gebruikersnaam, Wachtwoord) VALUES ('$naam', '$wachtwoord')";
 
             if ($conn->query($insert_user_sql) === TRUE) {
-                header('Location: index.html');
+                header('Location: index.php');
                 exit;
             } else {
                 echo "Fout bij het aanmaken van het account: " . $conn->error;
@@ -119,7 +119,7 @@
         input[type="submit"] {
             padding: 15px 30px;
             font-size: 20px;
-            background-color: blue;
+            background-color: red;
             color: white;
             border: none;
             border-radius: 8px;
